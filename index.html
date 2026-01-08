@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Before You Enter 💖</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #fee9f7, #e8f5fe, #fef2e8, #f0ffe8);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    font-family: "Segoe UI", sans-serif;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.lock-container {
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.lock-title {
+    font-size: 3rem;
+    color: #ff69b4;
+    text-shadow: 0 0 12px rgba(255, 105, 180, 0.6);
+    margin-bottom: 10px;
+}
+
+.lock-subtitle {
+    font-size: 1.2rem;
+    color: #8a2be2;
+    margin-bottom: 25px;
+}
+
+input {
+    padding: 12px;
+    width: 220px;
+    border-radius: 12px;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #ff69b4, #8a2be2);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.error {
+    margin-top: 15px;
+    color: crimson;
+    display: none;
+    font-size: 0.95rem;
+}
+</style>
+</head>
+
+<body>
+
+<div class="lock-container">
+    <div class="lock-title">🔒 Just One Step</div>
+    <div class="lock-subtitle">Only someone special knows this 💕</div>
+
+    <input type="password" id="password" placeholder="DDMMYYYY">
+    <br>
+    <button onclick="unlock()">Unlock 💌</button>
+
+    <div class="error" id="error">Nope 😜 Try the date that changed us</div>
+</div>
+
+<script>
+function unlock() {
+    const correctPassword = "14022023"; // 👈 CHANGE THIS
+    const input = document.getElementById("password").value;
+
+    if (input === correctPassword) {
+        window.location.href = "main.html";
+    } else {
+        document.getElementById("error").style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
