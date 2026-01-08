@@ -11,7 +11,7 @@
         gif: "gif2.gif"
     },
     { 
-        text: "Wishing you success, happiness, and everything your heart desires. ✨ ", 
+        text: "Zindagi Bhar aisi hi Mastikhori aur Tapar Tapar Karti rehna!!  ✨ ", 
         emoji: "💕",
         gif: "gif1.gif"
     },
@@ -19,7 +19,12 @@
         text: "Stay the amazing girl you are, always spreading positivity around(zyadatar kalesh). Have the happiest year ahead! 🥳 ", 
         emoji: "🌟",
         gif: "gif2.gif"
-    }
+    },
+    { 
+        text: "Wishing you success, happiness, and everything your heart desire. ✨ ", 
+        emoji: "💕",
+        gif: "gif1.gif"
+    },
 ];
 
 // State management
@@ -65,7 +70,7 @@ function displayNewReason() {
         reasonsContainer.appendChild(card);
         
         // Update counter
-        reasonCounter.textContent = `Reason ${currentReasonIndex + 1} of ${reasons.length}`;
+        reasonCounter.textContent = `Reason ${currentReasonIndex + 1} of ∞`;
         
         currentReasonIndex++;
 
@@ -76,7 +81,7 @@ function displayNewReason() {
                 duration: 0.5,
                 ease: "elastic.out",
                 onComplete: () => {
-                    shuffleButton.textContent = "Enter Our Storylane 💫";
+                    shuffleButton.textContent = "Click to see how amazing you are, Love💫";
                     shuffleButton.classList.add('story-mode');
                     shuffleButton.addEventListener('click', () => {
                         gsap.to('body', {
