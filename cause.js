@@ -150,4 +150,4 @@ document.addEventListener('mousemove', (e) => {
 });
 
 // Create initial floating elements
-setInterval(createFloatingElement, 500);
+setInterval(createFloatingElement, 400);
