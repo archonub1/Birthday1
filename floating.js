@@ -5,7 +5,7 @@ function createFloatingElement() {
     element.className = 'floating';
     element.textContent = elements[Math.floor(Math.random() * elements.length)];
     element.style.left = Math.random() * window.innerWidth + 'px';
-    element.style.top = window.innerHeight + 'px';
+    element.style.top = Math.random() * window.innerHeight + 'px';
     element.style.fontSize = (Math.random() * 20 + 10) + 'px';
 
     document.body.appendChild(element);
