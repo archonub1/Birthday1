@@ -133,7 +133,7 @@ function createFloatingElement() {
 
     gsap.to(element, {
         y: -500,
-        duration: Math.random() * 10 + 10,
+        duration: Math.random() * 12 + 14,
         opacity: 0,
         onComplete: () => element.remove()
     });
@@ -150,4 +150,4 @@ document.addEventListener('mousemove', (e) => {
 });
 
 // Create initial floating elements
-setInterval(createFloatingElement, 2000);
+setInterval(createFloatingElement, 500);
