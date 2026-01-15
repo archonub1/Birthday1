@@ -328,6 +328,15 @@
             z-index: 2;
         }
 
+        /* Cake Gif */
+        .cake-gif {
+            width: 220px;
+            max-width: 90%;
+            margin: 20px auto;
+            display: block;
+        }
+
+
         /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 12px;
@@ -401,8 +410,27 @@
             I’m so grateful for the bond we have, and for the positivity(Meri Kaleshhhhhni💝) you always bring into my life.<br>
             On your birthday, I just wish for endless happiness, love, and success to come your way.🌸</p>
         <p>You deserve all the joy in the world...keep shining and spreading your beautiful energy.✨</p>
-        <a href="#" class="goodbye-btn">Missing You with All My Heart💝</a>
+        <a href="javascript:void(0)" class="goodbye-btn" onclick="showCakeAndPlay()">
+    Missing You with All My Heart💝
+</a>
+
+<div id="cakeWrap" style="display:none; text-align:center; margin-top:30px;">
+    <img src="cake.gif" alt="Cake" class="cake-gif">
+    <audio id="voiceNote" src="myvoice.mp3"></audio>
+</div>
+
     </section>
+   
+    <script>
+function showCakeAndPlay() {
+    const cake = document.getElementById("cakeWrap");
+    const audio = document.getElementById("voiceNote");
+
+    cake.style.display = "block";
+    audio.play();
+}
+</script>
+
 </body>
 
 </html>
