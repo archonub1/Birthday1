@@ -85,3 +85,17 @@ h1 {
     .greeting { font-size: 1.2rem; }
     .cta-button { font-size: 1rem; }
 }
+.surprise-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.big-cake {
+    width: 380px;
+    max-width: 95%;
+}
+
