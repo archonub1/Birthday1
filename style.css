@@ -71,7 +71,8 @@ h1 {
 .floating {
     position: absolute;
     pointer-events: none;
-    opacity: 0;
+    opacity: 1;
+    z-index: 1;
 }
 
 @keyframes gradientBG {
