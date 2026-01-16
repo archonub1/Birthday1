@@ -62,7 +62,7 @@ window.addEventListener('load', () => {
     typeGreeting();
 
     // Create floating elements periodically
-    setInterval(createFloating, 1000);
+    setInterval(createFloating, 350);
 });
 
 // Hover effects
