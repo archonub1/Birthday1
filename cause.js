@@ -1,7 +1,7 @@
  // Reasons database
  const reasons = [
     { 
-        text: "You’re such a kind and wonderful person, and I feel lucky to share such a good bond with you. 💖", 
+        text: "You’re a kind and wonderful person, and I feel lucky to share such a good bond of love with you. 💖", 
         emoji: "🌟",
         gif: "gif1.gif"
     },
@@ -11,12 +11,22 @@
         gif: "gif2.gif"
     },
     { 
-        text: "Zindagi Bhar aisi hi Mastikhori aur Tapar Tapar Karti rehna!!  ✨ ", 
+        text: "Zindagi Bhar aisi hi Mastikhori aur Taparr Taparr Karti rehna!!  ✨ ", 
         emoji: "💕",
         gif: "gif1.gif"
     },
     { 
-        text: "Stay the amazing girl you are, always spreading positivity around(zyadatar kalesh). Have the happiest year ahead! 🥳 ", 
+        text: "Sadaaaaaaaaaaaaa Meriiii hi Rehnaaaa....Tatasthuuuuuuuuu!! 🥳 ", 
+        emoji: "🌟",
+        gif: "gif2.gif"
+    },
+    { 
+        text: "Dadagiriiii ka levellll badhatiii hi rehna...Aditi ke aage koi bol sakta hai kya??!!🦋  ", 
+        emoji: "🌟",
+        gif: "gif1.gif"
+    },
+    { 
+        text: "Stay the amazing girl you are, always spreading positivity around(zyadatar kalesh). And have the happiest year ahead! 🥳 ", 
         emoji: "🌟",
         gif: "gif2.gif"
     },
@@ -70,7 +80,7 @@ function displayNewReason() {
         reasonsContainer.appendChild(card);
         
         // Update counter
-        reasonCounter.textContent = `Reason ${currentReasonIndex + 1} of ∞`;
+        reasonCounter.textContent = `💫 ${currentReasonIndex + 1} of ∞`;
         
         currentReasonIndex++;
 
