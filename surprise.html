@@ -20,13 +20,28 @@
 
     <!-- YOUR CAKE + AUDIO -->
     <div class="surprise-container">
-        <img src="cake.gif" alt="Cake" class="big-cake">
+        <video id="cakeVideo" class="big-cake" autoplay playsinline>
+         <source src="cake.mp4" type="video/mp4">
+        </video>
 
-        <audio src="myvoice.mp3" autoplay loop></audio>
+        <audio id="voiceAudio" src="myvoice.mp3"></audio>
     </div>
 
     <!-- THIS LINE BRINGS THE FLOATING HEARTS -->
     <script src="floating.js"></script>
+    <script>
+     const video = document.getElementById("cakeVideo");
+    const voice = document.getElementById("voiceAudio");
+
+    let voiceStarted = false;
+
+    video.addEventListener("timeupdate", () => {
+    if (video.currentTime >= 22 && !voiceStarted) {
+        voiceStarted = true;
+        voice.play();
+    }
+});
+    </script>
 
 </body>
 </html>
