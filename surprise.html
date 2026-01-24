@@ -36,7 +36,7 @@
     let voiceStarted = false;
 
     video.addEventListener("timeupdate", () => {
-    if (video.currentTime >= 22 && !voiceStarted) {
+    if (video.currentTime >= 24 && !voiceStarted) {
         voiceStarted = true;
         voice.play();
     }
